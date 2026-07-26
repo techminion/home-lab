@@ -1,0 +1,25 @@
+# Base git config (symlinked to ~/.gitconfig_base and included from ~/.gitconfig).
+# Identity below applies on every device. modules/git.sh can still override it
+# from config.env if you ever want per-device values.
+
+[user]
+	name = TechMinion
+	email = thetechminion@gmail.com
+
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	lg = log --oneline --graph --decorate --all
+	last = log -1 HEAD

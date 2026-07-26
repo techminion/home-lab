@@ -1,0 +1,6 @@
+# Per-device config with identity / flags — never commit.
+config.env
+
+# Editor / OS noise
+*.swp
+.DS_Store
